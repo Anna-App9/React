@@ -1,13 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Sidebar from './Components/Sidebar';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Welcome from './Pages/Functional';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import Home from './Pages/Home';
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <React.StrictMode>,
+    <Sidebar/>
+    <Router>
+      <Routes>
+      <Route exact path='/' element={< Home />}/>
+      <Route exact path='/funct' element={< Welcome />}/>
+    </Routes>
+</Router>
+   </React.StrictMode>,
   document.getElementById('root')
 );
 
