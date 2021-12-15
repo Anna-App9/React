@@ -1,8 +1,8 @@
 import React from 'react';
 import { slide as Menu } from 'react-burger-menu';
 import './Sidebar.css';
-import { Link } from 'react-router-dom';
 import '../index';
+
 export default props => {
   return (
     <Menu>
@@ -14,6 +14,9 @@ export default props => {
 
       <a className="menu-item" href="/pure">
         Pure
+      </a>
+      <a className="menu-item" href="/props">
+        Props/State
       </a>
 
 
