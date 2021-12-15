@@ -18,6 +18,10 @@ export default props => {
       <a className="menu-item" href="/props">
         Props/State
       </a>
+      <a className="menu-item" href="/hooks">
+        Hooks
+      </a>
+
 
 
     </Menu>

@@ -18,7 +18,7 @@ export default class Propstate extends React.Component {
             <div>
                 <h1>Welcome To Props & State!</h1>;
                 <p> I am {this.state.name} studying in class {this.state.class} </p>
-                <p>My place is {this.props.city} which was passed as an attribute to my component.</p>
+                <p>I live in {this.props.city} which was passed as an attribute to my component.</p>
             </div>
 
         )

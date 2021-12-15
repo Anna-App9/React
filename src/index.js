@@ -8,9 +8,10 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Home from './Pages/Home';
 import Pure from './Pages/Pure';
 import Propstate from './Pages/Propstate';
+import Hooks from './Pages/Hooks';
 
 ReactDOM.render(
-  <React.StrictMode>,
+  <React.StrictMode>
     <Sidebar/>
     <Router>
       <Routes>
@@ -18,6 +19,8 @@ ReactDOM.render(
       <Route exact path='/funct' element={<Welcome/>}/>
       <Route exact path='/pure' element={<Pure/>}/>
       <Route exact path='/props' element={<Propstate city="Noida"/>}/>
+      <Route exact path='/hooks' element={<Hooks/>}/>
+
     </Routes>
 </Router>
    </React.StrictMode>,
