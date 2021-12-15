@@ -6,8 +6,8 @@ import '../App.css';
 
 function Hooks(){
 
- 
-    const [name,setName] = useState("With the useState");
+   //Basic useState
+    const [name,setName] = useState("With the basic useState");
     
 
     const reset=()=>{
@@ -20,8 +20,25 @@ function Hooks(){
         <div>
         
          <h1>Hooks.....!</h1>
-         <p>Hi { name } </p>
-         <Button onClick={reset}>Reset</Button>
+         <ul>
+             <li>
+                 Basic useState Reset
+                 <p>Try: {name}</p>
+                 <Button onClick={reset}>Reset</Button>
+             </li>
+             <li>
+                 Multiple useState for Forms: <br></br><br></br>
+                 <label>Name</label>
+                 <input type="text" value=""/>
+                 <br></br><br></br>
+                 <label>Email</label>
+                 <input type="text" value=""/>
+
+    
+             </li>
+         </ul>
+         
+
          </div>
     );
     
