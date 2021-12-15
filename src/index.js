@@ -9,10 +9,12 @@ import Home from './Pages/Home';
 import Pure from './Pages/Pure';
 import Propstate from './Pages/Propstate';
 import Hooks from './Pages/Hooks';
+import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
     <Sidebar/>
+    <App/>
     <Router>
       <Routes>
       <Route exact path='/' element={<Home/>}/>
@@ -20,7 +22,6 @@ ReactDOM.render(
       <Route exact path='/pure' element={<Pure/>}/>
       <Route exact path='/props' element={<Propstate city="Noida"/>}/>
       <Route exact path='/hooks' element={<Hooks/>}/>
-
     </Routes>
 </Router>
    </React.StrictMode>,
