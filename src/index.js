@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import Welcome from './Pages/Functional';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Home from './Pages/Home';
-
+import Pure from './Pages/Pure';
 
 ReactDOM.render(
   <React.StrictMode>,
@@ -15,6 +15,7 @@ ReactDOM.render(
       <Routes>
       <Route exact path='/' element={< Home />}/>
       <Route exact path='/funct' element={< Welcome />}/>
+      <Route exact path='/pure' element={<Pure/>}/>
     </Routes>
 </Router>
    </React.StrictMode>,
