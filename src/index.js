@@ -9,13 +9,18 @@ import Home from './Pages/Home';
 import Pure from './Pages/Pure';
 import Propstate from './Pages/Propstate';
 import Hooks from './Pages/Hooks';
-import App from './App';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
   <React.StrictMode>
+     <Router>
+   <div className="container-fluid">
+    <div className="row flex-nowrap">
+
+    
     <Sidebar/>
-    <App/>
-    <Router>
+    <div className="col py-3">
+   
       <Routes>
       <Route exact path='/' element={<Home/>}/>
       <Route exact path='/funct' element={<Welcome/>}/>
@@ -23,6 +28,10 @@ ReactDOM.render(
       <Route exact path='/props' element={<Propstate city="Noida"/>}/>
       <Route exact path='/hooks' element={<Hooks/>}/>
     </Routes>
+
+        </div>
+</div>
+</div>
 </Router>
    </React.StrictMode>,
   document.getElementById('root')
